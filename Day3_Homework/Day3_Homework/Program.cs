@@ -1,5 +1,5 @@
-﻿String name = "Mikołaj";
-String gender = "mężczyzna";
+﻿string name = "Mikołaj";
+string gender = "mężczyzna";
 int age = 25;
 
 if (gender == "kobieta" && age < 30)
