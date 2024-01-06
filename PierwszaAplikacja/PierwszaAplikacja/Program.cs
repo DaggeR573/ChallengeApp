@@ -1,20 +1,11 @@
-string name = "Ewa";
-string gender = "kobieta";
-int age = 30;
+int[] grades = new int[365];
+string[] daysOfWeek = new string[7];
+daysOfWeek[0] = "Poniedziałek";
+daysOfWeek[1] = "Wtorek";
+daysOfWeek[2] = "Środa";
+daysOfWeek[3] = "Czwartek";
+daysOfWeek[4] = "Piątek";
+daysOfWeek[5] = "Sobota";
+daysOfWeek[6] = "Niedziela";
 
-if (gender == "kobieta" && age < 30)
-{
-    Console.WriteLine("Kobieta poniżej 30 lat");
-}
-else if (name == "Ewa" && age == 30)
-{
-    Console.WriteLine("Ewa, lat 30");
-}
-else if (gender == "mężczyzna" && age < 18)
-{
-    Console.WriteLine("Niepełnoletni mężczyzna");
-}
-else
-{
-
-}
+Console.WriteLine(daysOfWeek[4]);
