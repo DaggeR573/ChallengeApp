@@ -1,11 +1,8 @@
-int[] grades = new int[365];
-string[] daysOfWeek = new string[7];
-daysOfWeek[0] = "Poniedziałek";
-daysOfWeek[1] = "Wtorek";
-daysOfWeek[2] = "Środa";
-daysOfWeek[3] = "Czwartek";
-daysOfWeek[4] = "Piątek";
-daysOfWeek[5] = "Sobota";
-daysOfWeek[6] = "Niedziela";
+var number = 4566;
 
-Console.WriteLine(daysOfWeek[4]);
+string numberInString = number.ToString();
+
+for  (int i = 0; i < numberInString.Length; i++)
+{
+    Console.WriteLine(i + " => " + numberInString);
+}
