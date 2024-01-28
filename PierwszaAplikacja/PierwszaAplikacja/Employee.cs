@@ -28,7 +28,7 @@
 
         }
 
-        public void SetGrade(int grade)
+        public void AddGrades(int grade)
         {
             this.grades.Add(grade);
         }

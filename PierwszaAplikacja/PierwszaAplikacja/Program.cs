@@ -5,23 +5,23 @@ Employee employee2 = new Employee("Anakin", "Skywalker", 28);
 Employee employee3 = new Employee("Adam", "Kamizelich", 32); 
 //nie wiem ile Adam ma lat, wiêc tak¹ liczbê strzeli³em, mam nadziejê, ¿e sie nie obrazi :D
 
-employee1.SetGrade(1);
-employee1.SetGrade(2);
-employee1.SetGrade(3);
-employee1.SetGrade(4);
-employee1.SetGrade(5);
+employee1.AddGrades(1);
+employee1.AddGrades(2);
+employee1.AddGrades(3);
+employee1.AddGrades(4);
+employee1.AddGrades(5);
 
-employee2.SetGrade(6);
-employee2.SetGrade(7);
-employee2.SetGrade(8);
-employee2.SetGrade(9);
-employee2.SetGrade(10);
+employee2.AddGrades(6);
+employee2.AddGrades(7);
+employee2.AddGrades(8);
+employee2.AddGrades(9);
+employee2.AddGrades(10);
 
-employee3.SetGrade(1);
-employee3.SetGrade(3);
-employee3.SetGrade(5);
-employee3.SetGrade(7);
-employee3.SetGrade(9);
+employee3.AddGrades(1);
+employee3.AddGrades(3);
+employee3.AddGrades(5);
+employee3.AddGrades(7);
+employee3.AddGrades(9);
 
 
 List<Employee> employees  = new List<Employee>()
