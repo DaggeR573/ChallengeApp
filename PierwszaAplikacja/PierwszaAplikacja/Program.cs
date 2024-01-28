@@ -1,62 +1,52 @@
-int number = 999;
-string numberAsString = number.ToString();
-char[] letters = numberAsString.ToArray();
+using PierwszaAplikacja;
 
-int[] counters = new int[10];
+Employee employee1 = new Employee("Miko³aj", "Szulc", 25);
+Employee employee2 = new Employee("Anakin", "Skywalker", 28);
+Employee employee3 = new Employee("Adam", "Kamizelich", 32); 
+//nie wiem ile Adam ma lat, wiêc tak¹ liczbê strzeli³em, mam nadziejê, ¿e sie nie obrazi :D
 
-foreach (char letter in letters)
+employee1.SetGrade(1);
+employee1.SetGrade(2);
+employee1.SetGrade(3);
+employee1.SetGrade(4);
+employee1.SetGrade(5);
+
+employee2.SetGrade(6);
+employee2.SetGrade(7);
+employee2.SetGrade(8);
+employee2.SetGrade(9);
+employee2.SetGrade(10);
+
+employee3.SetGrade(1);
+employee3.SetGrade(3);
+employee3.SetGrade(5);
+employee3.SetGrade(7);
+employee3.SetGrade(9);
+
+
+List<Employee> employees  = new List<Employee>()
 {
-    if (letter == '0')
+    employee1, employee2, employee3
+};
+
+int maxResult = -1;
+Employee employeeWithMaxResult = null;
+
+foreach (var employee in employees)
+{
+    if (employee.Result > maxResult)
     {
-        counters[0]++;
-    }
-    else if (letter == '1')
-    {
-        counters[1]++;
-    }
-    else if (letter == '2')
-    {
-        counters[2]++;
-    }
-    else if (letter == '3')
-    {
-        counters[3]++;
-    }
-    else if (letter == '4')
-    {
-        counters[4]++;
-    }
-    else if (letter == '5')
-    {
-        counters[5]++;
-    }
-    else if (letter == '6')
-    {
-        counters[6]++;
-    }
-    else if (letter == '7')
-    {
-        counters[7]++;
-    }
-    else if (letter == '8')
-    {
-        counters[8]++;
-    }
-    else if (letter == '9')
-    {
-        counters[9]++;
+        employeeWithMaxResult = employee;
+        maxResult = employee.Result;
     }
 }
 
-Console.WriteLine("Wyniki dla liczby: " + number);
-Console.WriteLine("0 => " + counters[0]);
-Console.WriteLine("1 => " + counters[1]);
-Console.WriteLine("2 => " + counters[2]);
-Console.WriteLine("3 => " + counters[3]);
-Console.WriteLine("4 => " + counters[4]);
-Console.WriteLine("5 => " + counters[5]);
-Console.WriteLine("6 => " + counters[6]);
-Console.WriteLine("7 => " + counters[7]);
-Console.WriteLine("8 => " + counters[8]);
-Console.WriteLine("9 => " + counters[9]);
-Console.ReadLine();
+Console.WriteLine("Najlepszy wynik to " + employeeWithMaxResult.Result + " punktów.");
+Console.WriteLine("Dane pracownika: ");
+Console.WriteLine("Imiê: " + employeeWithMaxResult.FirstName);
+Console.WriteLine("Nazwisko: " + employeeWithMaxResult.SecondName);
+Console.WriteLine("Wiek: " + employeeWithMaxResult.Age);
+
+
+
+
