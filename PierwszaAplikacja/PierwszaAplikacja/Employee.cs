@@ -12,7 +12,13 @@
             this.Age = age;
 
         }
-        
+
+        public Employee(string firstName)
+        {
+            this.FirstName = firstName;
+
+        }
+
         public string FirstName { get; private set; }
 
         public string SecondName { get; private set; }
