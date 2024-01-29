@@ -3,7 +3,7 @@
     public class Employee
     {
 
-        public List<int> grades = new List<int>();
+        public List<int> points = new List<int>();
 
         public Employee(string firstName, string secondName, int age) 
         {
@@ -23,14 +23,20 @@
         { 
             get
             {
-                return grades.Sum();
+                return points.Sum();
             }
 
         }
 
-        public void AddGrade(int grade)
+        public void AddPoints(int points)
         {
-            this.grades.Add(grade);
+            this.points.Add(points);
+        }
+
+        public void RemovePoints(int points)
+        {
+            this.points.Add(-points);
+
         }
 
     }
