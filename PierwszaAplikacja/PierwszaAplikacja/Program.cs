@@ -1,25 +1,20 @@
 using PierwszaAplikacja;
 
-Employee employee1 = new Employee("Miko³aj", "Szulc", 25);
-Employee employee2 = new Employee("Anakin", "Skywalker", 28);
-Employee employee3 = new Employee("Darth", "Vader", 32);
-
-
-employee1.AddPoints(7);
-employee1.RemovePoints(2);
-
-employee2.AddPoints(6);
-employee2.RemovePoints(2);
-
-employee3.AddPoints(5);
-employee3.RemovePoints(2);
+var employee = new Employee("Miko³aj", "Szulc");
+employee.AddGrade(12.53);
+employee.AddGrade(6636463463636);
+employee.AddGrade(6);
 
 
 
-Console.WriteLine(employee1.Result);
-Console.WriteLine(employee2.Result);
-Console.WriteLine(employee3.Result);
+var statistics = employee.GetStatistics();
+Console.WriteLine($"Average: {statistics.Average:N2}");
+Console.WriteLine($"Min: {statistics.Min}");
+Console.WriteLine($"Max: {statistics.Max}");
 
+SetSmth(out statistics);
 
-
-
+void SetSmth (out Statistics statistics)
+{
+    statistics = new Statistics();
+}
