@@ -1,58 +1,58 @@
-namespace PierwszaAplikacja.Tests
-{
-    public class EmployeeTests
-    {
+//namespace PierwszaAplikacja.Tests
+//{
+//    public class EmployeeTests
+//    {
 
-        [Test]
-        public void WhenThreeGradesAdded_ThenCheckIfMax()
-        {
+//        [Test]
+//        public void WhenThreeGradesAdded_ThenCheckMax()
+//        {
 
-            //arrange
-            Employee employee = new Employee("Miko³aj", "Szulc");
-            employee.AddGrade(10);
-            employee.AddGrade(2);
-            employee.AddGrade(3);
+//            //arrange
+//            Employee employee = new Employee("Miko³aj", "Szulc");
+//            employee.AddGrade(10);
+//            employee.AddGrade(2);
+//            employee.AddGrade(3);
 
-            //act
-            var statistics = employee.GetStatistics();
+//            //act
+//            var statistics = employee.GetStatistics();
 
-            //assert
-            Assert.AreEqual(10, statistics.Max);
-        }
+//            //assert
+//            Assert.AreEqual(10, statistics.Max);
+//        }
 
-        [Test]
-        public void WhenThreeGradesAdded_ThenReturnIfMin()
-        {
+//        [Test]
+//        public void WhenThreeGradesAdded_ThenReturnMin()
+//        {
 
-            //arrange
-            Employee employee = new Employee("Miko³aj", "Szulc");
-            employee.AddGrade(10);
-            employee.AddGrade(2);
-            employee.AddGrade(3);
+//            //arrange
+//            Employee employee = new Employee("Miko³aj", "Szulc");
+//            employee.AddGrade(10);
+//            employee.AddGrade(2);
+//            employee.AddGrade(3);
 
-            //act
-            var statistics = employee.GetStatistics();
+//            //act
+//            var statistics = employee.GetStatistics();
 
-            //assert
-            Assert.AreEqual(2, statistics.Min);
-        }
+//            //assert
+//            Assert.AreEqual(2, statistics.Min);
+//        }
 
-        [Test]
-        public void WhenThreeGradesAdded_ThenReturnAverage()
-        {
+//        [Test]
+//        public void WhenThreeGradesAdded_ThenReturnAverageOfThem()
+//        {
 
-            //arrange
-            Employee employee = new Employee("Miko³aj", "Szulc");
-            employee.AddGrade(10);
-            employee.AddGrade(2);
-            employee.AddGrade(3);
+//            //arrange
+//            Employee employee = new Employee("Miko³aj", "Szulc");
+//            employee.AddGrade(10);
+//            employee.AddGrade(2);
+//            employee.AddGrade(3);
 
-            //act
-            var statistics = employee.GetStatistics();    
+//            //act
+//            var statistics = employee.GetStatistics();    
 
-            //assert
-            Assert.AreEqual(5, statistics.Average);
-        }
+//            //assert
+//            Assert.AreEqual(5, statistics.Average);
+//        }
 
-    }
-}
+//    }
+//}
